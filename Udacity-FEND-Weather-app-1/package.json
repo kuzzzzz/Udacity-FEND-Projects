@@ -1,0 +1,21 @@
+{
+  "name": "weather-app",
+  "description": "app that tells the weather of your current location",
+  "version": "0.0.1",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "local-server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+      "start" : "node local-server.js" ,
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "atumah daniel",
+  "license": "ISC"
+}
