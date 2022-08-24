@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>My Travel App</title>
+     </head>
+
+    <body>
+
+        <header>
+            <h1 class="logo">
+                My Travel App
+            </h1>
+        </header>
+
+        <main>
+            <section class="form-input">
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                  <label for="url">Where Would You Like To Visit?</label>
+                    <input id="name" type="url" name="url-input" placeholder="Please enter valid Country">
+                    <input class="submit-button" type="submit" name="" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            </section>
+
+        <section class="form-result">
+             <div id="results">
+                <div class="country">
+                <div class="country-details">
+                    <h2>Country Details</h2>
+                    <p id="text">Name:</p>
+                    <p id="text1">Capital:</p>
+                    <p id="text2">Population:</p>
+                    <p id="text3">Currencies:</p>
+                </div>
+                <figure>
+                    <img class="country-image" id="image" src="" alt="">
+                        <figcaption> relative country picture </figcaption>
+                    <img class="country-image" id="image1" src="" alt="">
+                    <figcaption>Country flag</figcaption>
+
+                </figure>
+                </div>
+                <div class="weather">
+                    <div class="weather-details">
+                  <h2>Weather Details</h2>
+                  <p id="desc"></p>
+                  <p id="desc1"></p>
+                  <p id="desc2"></p>
+                  <p id="desc3"></p>
+                </div>
+                   <figure>     
+                  <img id="image3" src="" alt="">
+                </figure>
+                </div>
+            </div>
+        </section>
+        </main>
+
+        <footer>
+            <p>Made With 💖 AMD</p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>

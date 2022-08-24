@@ -1,0 +1,59 @@
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 10px;
+
+div{
+    margin: 5px;
+    .country {
+
+    background-color: $bgcolor;
+    color: $textcolor;
+    font-size: $fontsize;
+    font-family: "Source Sans Pro", sans-serif;    font-size: 16px;
+    line-height:1.2;
+    padding: 10px;
+
+}
+}
+
+.country{
+    display: flex;
+    flex-direction: row;
+    background:linear-gradient(rgb(222, 244, 247),rgb(122, 220, 235));
+
+    .country-details,figure{
+        display: flex;
+        flex-direction:column;
+        flex: auto;
+        
+    }
+}
+
+.country-image{
+    margin: auto;
+    width: 60%;
+    min-width: 150px;
+
+}
+
+figcaption{
+    text-align: center;
+}
+.country-details h2,.weather h2 {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.weather{
+    display: flex;
+    flex-direction: row;
+    background:linear-gradient(rgb(47,150,163),rgb(48,130,143));    color: $textcolor;
+    font-size: $fontsize;
+    font-family: "Source Sans Pro", sans-serif; 
+    line-height:1.2;
+    padding: 10px;
+    color: rgb(132, 236, 236);
+    margin-top: 18px;
+}

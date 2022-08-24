@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin:10px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/01/09/18/27/old-1130731_960_720.jpg);
+}
+
+main {
+    flex: 1;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
